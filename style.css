@@ -1,0 +1,139 @@
+:root{
+  font-size: 62.5%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+
+  font-family: 'DM Sans';
+  font-size: 1.6rem;
+  font-weight: 400;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  
+  background: linear-gradient(45deg, #190361 0%, #BB00FF 100%);
+
+  display: grid;
+  place-items: center;
+
+}
+
+main{
+  width: min(30rem, 80%);
+
+  padding: 4.8rem 6.4rem 6.4rem;  
+
+  text-align: center;
+
+  background: #FFFFFF;
+  box-shadow: 0rem .2rem .2rem rgba(0, 0, 0, 0.1);
+  border-radius: .6rem;
+}
+
+form button{
+  border: none;
+
+  font-weight: bold;
+
+  background: #FFFFFF;
+
+  color: #FFFFFF;
+
+  cursor: pointer;
+}
+
+.hide{
+  display: none;
+}
+
+.screenOne h1{
+  font-family: 'Montserrat';
+  font-size: 2.4rem;
+  font-weight: 600;
+
+  margin-bottom: 1.4rem;
+}
+
+.screenOne h1, p{
+  color: #34355B;
+}
+
+.screenOne form{
+  display: flex;
+  gap: 0;
+
+  justify-content: center;
+
+  margin-top: 2rem;
+
+}
+
+#cookie:hover {
+  animation-name: shake-image;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes shake-image {
+  0% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+  20% {
+    transform: translate(-10px, 0) rotate(-10deg);
+  }
+  30% {
+    transform: translate(10px, 0) rotate(10deg);
+  }
+  50% {
+    transform: translate(-10px, 0) rotate(-5deg);
+  }
+  60% {
+    transform: translate(10px, 0) rotate(5deg);
+  }
+  100% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+}
+
+.screenTwo h2, p, img{
+  margin-bottom: 1.7rem;
+}
+
+.screenTwo h2{
+  font-size: 2.4rem;
+  font-weight: bold;
+
+  color: #34355B;
+}
+
+.screenTwo p{
+  padding: 1rem;
+  
+  font-family: 'Dancing Script';
+  font-size: 2.4rem;
+  line-height: 2.9rem;
+  text-align: center;
+
+  color: #000000;
+
+  background: #E4EDF1;
+  box-shadow: .2rem .2rem .2rem rgba(85, 85, 85, 0.5);
+}
+
+.screenTwo form button{
+  border-radius: 4px;
+
+  padding: 1.6rem;
+
+  background-color: #FF9500;
+
+  color: #FFFFFF;
+}
+
+.screenTwo form button:hover{
+  background-color: #eb8900;
+}
